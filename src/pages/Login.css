@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.lado-amarelo {
+  width: 50%;
+  min-height: 100vh;
+  background-color: #fffc00;
+  background-image: url("../assets/snap.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.lado-cinza {
+  width: 50%;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: white;
+  width: 555px;
+  padding: 38px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.box h2 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+.box p {
+  font-size: 20px;
+  margin-bottom: 28px;
+  color: #444;
+}
+
+.box input {
+  width: 100%;
+  height: 64px;
+  margin-bottom: 18px;
+  padding: 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.box a {
+  display: block;
+  margin: 2px 0 28px;
+  color: #008cff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.box button {
+  width: 100%;
+  height: 65px;
+  background-color: #1d9bf0;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* CELULAR E TABLET */
+@media (max-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+
+  .app {
+    flex-direction: column;
+  }
+
+  .lado-amarelo,
+  .lado-cinza {
+    width: 100%;
+    min-height: 50vh;
+  }
+
+  .box {
+    width: 90%;
+    max-width: 555px;
+  }
+}
